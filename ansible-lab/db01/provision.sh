@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Atualiza todos os pacotes do sistema
+sudo yum -y update
+
+cat << EOT >> /home/vagrant/.ssh/authorized_keys
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCj8knR3hw2Kc+lwWVFjP9c2BUEPvyC2oMQskKyMBVEGZGHbyFIZP/F+7CuPIDiHY7syjvhxrNjFct70nag6ocEm252Bjo3Ux2+18xIuuEjxNWkkl/yqQ/U4nGjFjh3M5SAyHlwz2bk2DCcjHha3AtRrjI40eOQlgdWqmN8wk+edxtA3ktMr/rqeiVAQjTAW3C7fUGjJJj7sU2d0XU7QGrIcYkXlQqrXD2issuieAtimRexq64jXRocG0QdjMJpvvQziVIYXy2QJD37BRjPfI+rgoosvGFSYh+eAO1dlIVwjkffuNBTkNiYwXa/k1MjiWJ5vpzS4wzgi3+OUmZVYdhj vagrant@control-node
+EOT
